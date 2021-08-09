@@ -13,7 +13,7 @@ Resources:
           Properties:
             Method: post
             Path: /
-      Handler: app/index.handler
+      Handler: index.handler
       Runtime: nodejs12.x
       Timeout: 10
 
