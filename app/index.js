@@ -102,6 +102,6 @@ const people = [
 
 module.exports = dataForBMICalculation;
 
-exports.handler = async function(event, context) {
+module.exports.handler = async function(event, context) {
   return 'Hello World!';
 };
