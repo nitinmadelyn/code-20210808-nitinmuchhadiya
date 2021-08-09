@@ -5,8 +5,5 @@
   },
   "scripts": {
     "test": "jest --testTimeout=100000"
-  },
-  "dependencies": {
-    "serverless-stack-output": "^0.2.3"
   }
 }

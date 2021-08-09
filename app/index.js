@@ -103,5 +103,6 @@ const people = [
 module.exports = dataForBMICalculation;
 
 module.exports.handler = async function(event, context) {
-  return 'Hello World!';
+  const body = JSON.parse(event.body)
+  return dataForBMICalculation(body.data, body.totalCountOf);
 };
