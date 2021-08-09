@@ -13,7 +13,7 @@ Resources:
           Properties:
             Method: post
             Path: /
-      Handler: lambda/index.handler
+      Handler: app/index.handler
       Runtime: nodejs12.x
       Timeout: 10
       Role: arn:aws:iam::337039027061:role/cf-pipeline-role

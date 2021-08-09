@@ -101,3 +101,7 @@ const people = [
 //dataForBMICalculation(people, "OverWeight");
 
 module.exports = dataForBMICalculation;
+
+exports.handler = async function(event, context) {
+  return 'Hello World!';
+};
