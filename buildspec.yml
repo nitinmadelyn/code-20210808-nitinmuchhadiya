@@ -1,8 +1,21 @@
 version: 0.2
 phases:
   install:
+    runtime-versions:
+      nodejs: 10
     commands:
       - npm install
+      - npm install -g serverless
   build:
     commands:
       - npm test
+      - aws cloudformation package --template-file template.yaml --s3-bucket code-20210808-nitinmuchhadiya-s3 --output-template-file packaged.yaml
+      - serverless deploy --stage prod -v
+  post_build:
+    commands:
+      - serverless remove --stage prod -v
+artifacts:
+  type: zip
+  files:
+    - template.yaml
+    - packaged.yaml

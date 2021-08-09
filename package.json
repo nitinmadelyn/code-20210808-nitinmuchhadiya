@@ -1,8 +1,12 @@
 {
   "devDependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4"
   },
   "scripts": {
     "test": "jest --testTimeout=100000"
+  },
+  "dependencies": {
+    "serverless-stack-output": "^0.2.3"
   }
 }
