@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: app/
-      Description: Resolve/Store URLs
+      Description: api endpoints
       Events:
         postUrl:
           Type: HttpApi
